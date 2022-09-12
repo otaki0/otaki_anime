@@ -1,0 +1,60 @@
+header{
+    /* background-image: url(../../img/defulthome_bg.jpg); */
+    background: rgb(134,133,133);
+    background: linear-gradient(90deg, rgba(134,133,133,0.95) , rgba(210,209,209,0.95) ) ,url("../../img/defulthome_bg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* filter:brightness(10); */
+}
+
+.header-default{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:100vh;
+}
+
+.sign-container{
+    width: 40%;
+    height: 100vh;
+    z-index:9999;
+    background-color: #000000;
+    clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.logo{
+    z-index: 99999;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text-second);
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+}
+
+
+.logo::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--lines-color);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.logo::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--lines-color);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

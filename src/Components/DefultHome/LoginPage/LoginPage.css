@@ -1,0 +1,10 @@
+form{
+    width: 300px;
+}
+
+.link-1{
+    padding-left: 60px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
